@@ -1,0 +1,15 @@
+.typography-primary {
+  align-items: flex-start;
+  gap: 8px;
+  h2 {
+    font-family: var(--font-family-secondary);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--titan-charcoal);
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--titan-dark-grey);
+  }
+}

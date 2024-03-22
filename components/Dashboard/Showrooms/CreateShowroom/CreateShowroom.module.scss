@@ -1,0 +1,232 @@
+.wrapper {
+  background: rgba($color: var(--titan-black), $alpha: 35%);
+  .content {
+    position: relative;
+    justify-content: flex-start;
+
+    .top {
+      padding: 16px 48px;
+      justify-content: flex-start;
+      gap: 16px;
+      width: 100%;
+      &.presets-wrapper {
+        padding: 16px 0;
+      }
+    }
+
+    &.creating-wrapper {
+      height: 90vh;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .creating {
+        position: relative;
+        transform: unset;
+      }
+    }
+
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+
+    .back {
+      position: absolute;
+      left: 24px;
+      top: 10px;
+      gap: 8px;
+      width: 87px;
+      height: 34px;
+      cursor: pointer;
+      background: #fff;
+      box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+      border-radius: 5px;
+
+      svg {
+        rotate: 180deg;
+      }
+    }
+
+    .title {
+      font-family: var(--font-family-secondary);
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--titan-black);
+    }
+    .preset-heading {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .actions {
+      width: 220px;
+      justify-content: space-between;
+      padding: 0 30px;
+      .page {
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--titan-dark-grey);
+        font-family: var(--font-family-tertiary);
+      }
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  align-items: flex-start;
+  gap: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .brands {
+    gap: 32px;
+    width: 100%;
+    .brand {
+      gap: 16px;
+      width: 100%;
+      .image {
+        border-radius: 5px;
+        overflow: hidden;
+        display: block;
+      }
+      .more {
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+        .icon {
+          width: 19px;
+          height: 19px;
+          border: 1px solid #5f6ff4;
+          border-radius: 2px;
+          flex-shrink: 0;
+          cursor: pointer;
+          user-select: none;
+          &.checked {
+            background: var(--titan-accent-color);
+          }
+        }
+
+        label {
+          align-items: flex-start;
+          width: 100%;
+          cursor: pointer;
+          user-select: none;
+
+          .name {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--titan-black);
+          }
+          .info {
+            font-weight: 500;
+            font-size: 12px;
+            color: var(--titan-dark-grey);
+          }
+        }
+      }
+    }
+  }
+}
+
+.showroom-information {
+  width: 481px;
+  position: relative;
+  .preview-wrapper {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .main {
+    background: #d9d9d9;
+    border-radius: 5px;
+    width: 100%;
+    height: 193px;
+    object-fit: cover;
+  }
+  .inputs {
+    gap: 32px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.presets-wrapper {
+  .preset-title {
+    width: 100%;
+    padding: 0 48px;
+    justify-content: space-between;
+    .count {
+      font-family: var(--font-family-tertiary);
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--titan-dark-grey);
+    }
+  }
+  .all-layouts {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 0 48px;
+    margin-right: 8px;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 25px;
+
+    .layouts-wrapper {
+      &:not(:last-child) {
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--titan-lightest-grey);
+      }
+    }
+  }
+}
+
+.preview-project {
+  .preview-container {
+    width: 620px;
+    height: 340px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .preset-secondary {
+    flex: 0 0 calc(100% / 3 - 20px / 3) !important;
+  }
+}
+
+.logo-wrapper {
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  .logo {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+}
+
+.submit-wrapper {
+  background: #fff;
+  box-shadow: 0 -4px 4px rgb(0 0 0 / 10%);
+  width: 100%;
+  padding: 10px 48px;
+  justify-content: flex-end;
+  gap: 10px;
+  .action {
+    width: 113px;
+  }
+}

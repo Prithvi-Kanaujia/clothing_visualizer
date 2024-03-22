@@ -1,0 +1,41 @@
+.button {
+  position: relative;
+  overflow: hidden;
+  .ripple {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background: #818181;
+    display: block;
+    content: '';
+    border-radius: 625rem;
+    opacity: 100%;
+    animation: 0.9s ease 1 forwards ripple-effect;
+  }
+  .content {
+    position: relative;
+    svg {
+      width: 40%;
+      height: 40%;
+    }
+  }
+}
+
+@keyframes ripple-effect {
+  0% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+  50% {
+    transform: scale(10);
+    opacity: 37.5%;
+  }
+  90% {
+    transform: scale(90);
+    opacity: 80%;
+  }
+  100% {
+    transform: scale(500);
+    opacity: 0%;
+  }
+}

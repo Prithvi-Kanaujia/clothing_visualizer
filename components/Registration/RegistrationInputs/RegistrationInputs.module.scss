@@ -1,0 +1,95 @@
+.inputwrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  width: 100%;
+  gap: 10px;
+
+  .tnc {
+    padding: 14px;
+    box-shadow: 0 2px 12px rgba(0 0 0 / 15%);
+    font-size: 14px;
+  }
+
+  .text-danger {
+    display: block;
+    margin-top: 10px;
+    color: red;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid var(--color-black);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    color: var(--color-black);
+  }
+
+  .phonefield {
+    height: 40px;
+    width: 100%;
+
+    /* stylelint-disable  selector-class-pattern */
+
+    .PhoneInput {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: black;
+      width: 100%;
+
+      /* stylelint-enable  selector-class-pattern */
+
+      input {
+        color: black;
+        width: 100%;
+        height: 40px;
+      }
+
+      select {
+        width: 50px;
+        height: 45px;
+      }
+    }
+  }
+
+  .select-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+
+    &.modify-grid {
+      grid-template-columns: auto auto;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+    .option-card {
+      padding: 17px 24px;
+      box-shadow: (0 2px 12px rgba(0 0 0 / 15%));
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        padding: 17px 18px 17px 30px;
+        background: var(--titan-lightest-grey);
+      }
+
+      &.selected {
+        padding: 17px 18px 17px 30px;
+        background: var(--titan-accent-color-tint);
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 6rem;
+    padding: 10px;
+    background: var(--titan-lightest-grey);
+  }
+}

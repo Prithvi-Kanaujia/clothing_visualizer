@@ -1,0 +1,29 @@
+.wrapper {
+  background: rgba($color: var(--titan-black), $alpha: 35%);
+
+  .content {
+    width: 684px;
+    gap: 40px;
+    padding: 32px;
+    padding-top: 48px;
+    .title {
+      font-family: var(--font-family-secondary);
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--titan-black);
+      text-align: center;
+    }
+    .info {
+      font-weight: 500;
+      font-size: 18px;
+      color: #eb483f;
+      text-align: center;
+    }
+    .actions {
+      gap: 24px;
+      .action {
+        width: 140px;
+      }
+    }
+  }
+}

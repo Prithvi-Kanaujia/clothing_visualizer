@@ -1,0 +1,59 @@
+.wrapper {
+  outline: none;
+
+  .content {
+    gap: 40px;
+    background: rgba(0 0 0 / 50%);
+    backdrop-filter: blur(20px);
+    padding: 24px 20px 14px;
+    border: 1px solid var(--titan-lighter-grey);
+    color: white;
+
+    h3 {
+      font-family: var(--font-family-secondary);
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    .musiclist {
+      gap: 10px;
+      width: 100%;
+      height: 400px;
+      overflow-y: auto;
+      justify-content: flex-start;
+      .musicitem {
+        justify-content: space-between;
+        align-items: space-between;
+        padding: 15px 20px;
+        width: 100%;
+        border-radius: 5px;
+
+        &.selected {
+          border-left: 3px solid var(--titan-accent-color);
+        }
+
+        .audio-prog {
+          height: 40px;
+          width: 40px;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 16px;
+        }
+
+        .time {
+          font-family: var(--font-family-tertiary);
+          font-weight: 600;
+          font-size: 14px;
+          color: var(--titan-grey);
+        }
+      }
+    }
+  }
+}

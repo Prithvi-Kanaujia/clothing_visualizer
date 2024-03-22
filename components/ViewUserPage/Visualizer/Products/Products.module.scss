@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px 6px;
+}
+
+.outer {
+  height: calc(100% - 94px);
+  overflow-y: auto;
+}
+
+.outer::-webkit-scrollbar {
+  display: block;
+  width: 4px;
+}
+
+.outer::-webkit-scrollbar-thumb {
+  background-color: var(--titan-lighter-grey);
+  border-radius: 3px;
+}

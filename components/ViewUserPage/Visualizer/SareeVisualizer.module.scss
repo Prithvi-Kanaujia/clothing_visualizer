@@ -1,0 +1,110 @@
+.wrapper {
+  width: 303px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 56px;
+  z-index: 10;
+  height: calc(100vh - 56px);
+  padding: 16px 4px 16px 16px;
+
+  .exit {
+    margin-bottom: 26px;
+    button {
+      border-radius: 5px;
+      border: 1px solid #fff;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      background: none;
+      width: 192px;
+      height: 34px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .tabs-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+
+    .categories {
+      display: flex;
+      gap: 16px;
+
+      .category {
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        &.active {
+          border-bottom: 3px solid #fff;
+        }
+        & p {
+          font-size: 14px;
+          color: #fff;
+          line-height: 18px;
+          font-weight: 600;
+          font-style: normal;
+        }
+      }
+    }
+
+    .setting-icon {
+      cursor: pointer;
+    }
+  }
+}
+
+.text {
+  color: var(--titan-pure-white, #fff);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+}
+
+.settings {
+  width: 224px;
+}
+
+.mobileWrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+
+  .mobileTabs {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 32px;
+
+    .mobileSettingIcon {
+      width: 32px;
+      cursor: pointer;
+    }
+
+    .mobileCats {
+      width: calc(100% - 32px);
+      display: flex;
+      height: 100%;
+      .mobileCat {
+        cursor: pointer;
+        width: 50%;
+        text-align: center;
+        height: 100%;
+        line-height: 32px;
+        &.activeMobile {
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+}

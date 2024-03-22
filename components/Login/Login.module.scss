@@ -1,0 +1,103 @@
+.logwrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  color: white;
+
+  .left {
+    background: var(--titan-stylised-color-linear-inverted);
+    width: 60%;
+
+    .leftcontent {
+      margin-left: 90px;
+      margin-top: 100px;
+
+      .title {
+        margin-bottom: 38px;
+      }
+
+      .subtitle {
+        margin-bottom: 19px;
+      }
+
+      .register-btn {
+        width: 195px;
+        height: 40px;
+        background: #fff;
+        box-shadow: 0 4px 4px rgba(0 0 0 / 25%);
+        color: var(--titan-accent-color);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .instcard {
+        position: absolute;
+        bottom: 60px;
+      }
+    }
+  }
+
+  .rightform {
+    background: #fff;
+    width: 40%;
+  }
+}
+
+.rightwrapper {
+  .formlogo {
+    img {
+      transform: scale(0.7);
+    }
+  }
+
+  .inputgroup {
+    color: black;
+    gap: 40px;
+    width: 360px;
+
+    .inputwrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      input {
+        height: 38px;
+        padding: 10px;
+        border: 1px solid var(--color-black);
+      }
+
+      .submit-btn {
+        margin-top: 50px;
+        width: 100%;
+      }
+    }
+    .remember {
+      width: 100%;
+      justify-content: space-between;
+
+      .checkbox {
+        justify-content: flex-start;
+        gap: 5px;
+        .box {
+          width: 19px;
+          height: 19px;
+          border: 1px solid var(--titan-accent-color);
+          border-radius: 2px;
+          cursor: pointer;
+
+          &.checked {
+            background: var(--titan-accent-color);
+          }
+        }
+      }
+    }
+  }
+  .lowerlink {
+    margin-top: 16px;
+    color: black;
+    gap: 10px;
+    .reglink {
+      color: var(--titan-accent-color);
+    }
+  }
+}

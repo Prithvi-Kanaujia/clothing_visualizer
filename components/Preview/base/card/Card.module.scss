@@ -1,0 +1,15 @@
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 2;
+
+  .close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+}

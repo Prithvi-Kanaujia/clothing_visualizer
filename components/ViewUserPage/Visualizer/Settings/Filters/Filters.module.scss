@@ -1,0 +1,163 @@
+.wrapper {
+  color: var(--titan-pure-white, #fff);
+  .sortSelect {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .collapseWrapper {
+    padding: 14px 0px;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+    & .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+      }
+    }
+
+    & .last {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}
+
+.resetText {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.priceFilter {
+  .choose {
+    .top {
+      display: flex;
+      margin-top: 12px;
+      margin-bottom: 17px;
+      input {
+        width: 80px;
+        height: 24px;
+        color: #ffffff;
+        border: 2px solid;
+        padding: 2px 6px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 3px;
+        padding-left: 20px;
+      }
+
+      .inputW {
+        position: relative;
+      }
+      .inputW::before {
+        content: '₹';
+        width: 8px;
+        display: block;
+        height: 24px;
+        color: #fff;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+      }
+    }
+
+    .bottom {
+      input[type='range'] {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.fabricFilter {
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .container {
+      display: flex;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      height: 19px;
+      width: 19px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 3px;
+    }
+
+    .container:hover input ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    .container input:checked ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    .checkmark:after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+    .container .checkmark:after {
+      left: 6px;
+      top: 3px;
+      width: 5px;
+      height: 10px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    label {
+      font-weight: 500;
+      .quant {
+        font-family: Inter, sans-serif;
+        margin-left: 8px;
+      }
+
+      .color {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 4px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.showMoreText {
+  margin-top: 12px;
+}

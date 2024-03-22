@@ -1,0 +1,54 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+
+  .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+
+    .title {
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .description {
+      color: #cecece;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+
+      &.spacing {
+        margin-left: 12px;
+      }
+
+      &.text-bold {
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .icon {
+        width: 32px;
+        height: 32px;
+
+        & svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

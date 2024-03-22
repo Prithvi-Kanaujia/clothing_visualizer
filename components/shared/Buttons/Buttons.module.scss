@@ -1,0 +1,51 @@
+.button {
+  background: var(--titan-accent-color);
+  color: #fff;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  gap: 10px;
+
+  &:hover {
+    background: var(--hovered-titan-accent-color);
+  }
+  &:disabled {
+    background: rgb(98 108 206 / 50%);
+    cursor: not-allowed;
+  }
+}
+.button-secondary {
+  background: #fff;
+  height: 40px;
+  border-radius: 5px;
+  color: var(--titan-accent-color);
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid var(--titan-accent-color);
+  &:hover {
+    background: #f5f5f5;
+  }
+}
+.link-button {
+  background: transparent;
+  color: var(--titan-charcoal);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  gap: 10px;
+  &:hover {
+    background: transparent;
+  }
+}
+
+.arrow-button {
+  cursor: pointer;
+  user-select: none;
+  &.left {
+    rotate: 0deg;
+  }
+  &.right {
+    rotate: 180deg;
+  }
+}

@@ -1,0 +1,28 @@
+.cardbox {
+  width: 220px;
+  height: 163px;
+  background: rgba(255 255 255 / 5%);
+  box-shadow: 0 4px 4px rgba(0 0 0 / 30%);
+  border: 0.5px solid var(--titan-lightest-grey);
+  border-radius: 10%;
+  padding: 40px 10px 0 20px;
+  font-size: 12px;
+  position: relative;
+
+  .circlecut {
+    position: absolute;
+    top: 50%;
+    right: -26px;
+    width: 42px;
+    height: 42px;
+    background: #869de3;
+    border: 0.5px solid var(--titan-lightest-grey);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
+.cardset {
+  gap: 5px;
+}

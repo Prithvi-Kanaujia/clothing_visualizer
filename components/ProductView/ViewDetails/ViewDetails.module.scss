@@ -1,0 +1,74 @@
+.arrow-text {
+  display: flex;
+  margin: 20px 0 20px 25px;
+  width: 140px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.details-header {
+  margin: 20px 0 0 25px;
+}
+.table-div {
+  height: 163px;
+  margin: 20px 0 0 25px;
+  border-radius: 5px;
+  background: rgba(0 0 0 / 25%);
+  width: 90%;
+  overflow-y: scroll;
+  .table-right-border {
+    border-right: 0.5px solid #545454;
+  }
+  &::-webkit-scrollbar {
+    width: 6px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #a1a1a1; /* color of the scroll thumb */
+    border-radius: 3px; /* roundness of the scroll thumb */
+    border: 3px #a1a1a1; /* creates padding around scroll thumb */
+  }
+}
+
+.bottom-tab {
+  display: flex;
+  border-radius: 5px;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0 0 25px;
+  background: rgba(0 0 0 / 25%);
+}
+
+table {
+  padding: 0 20px 0 0;
+  border-collapse: collapse;
+  width: 90%;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+td {
+  color: white;
+  border-bottom: 0.5px solid #545454;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.links {
+  width: 90%;
+  padding: 5px;
+  background: rgba(0 0 0 / 25%);
+  border-radius: 5px;
+  margin: 20px 0 0 25px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}

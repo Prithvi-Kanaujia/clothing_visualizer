@@ -1,0 +1,55 @@
+.slide-knob-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.heading-div-mobile {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 20px;
+}
+
+.heading-img-mobile {
+  img {
+    width: 300px;
+    height: 300px;
+    margin: 20px 0 0 38px;
+  }
+}
+
+.carousel-component-mobile{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 25px 32px;
+  width: 68%;
+  .component-carousel-mobile{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    .component-card-mobile{
+      margin: 0 5px 0 5px;
+      img{
+        border-radius: 5px;
+        height: 61px;
+        width: 61px;
+      }
+    }
+    &::-webkit-scrollbar {
+    height:0px /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #a1a1a1; /* color of the scroll thumb */
+    border-radius: 3px; /* roundness of the scroll thumb */
+    border: 3px #a1a1a1; /*creates padding around scroll thumb */
+  }
+}  
+
+
+}

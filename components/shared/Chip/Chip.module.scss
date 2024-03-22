@@ -1,0 +1,17 @@
+.wrapper {
+  border-radius: 20px;
+  background: var(--pop-up-50, rgba(0, 0, 0, 0.5));
+  gap: 8px;
+  padding: 4.5px 8px;
+  p {
+    color: var(--titan-lighter-grey, #cecece);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+}

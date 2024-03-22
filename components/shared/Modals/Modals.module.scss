@@ -1,0 +1,26 @@
+.background-wrap {
+  background: rgba(0 0 0 / 25%);
+  .wrapper {
+    position: relative;
+    box-shadow: 0 12px 15px rgb(0 0 0 / 25%), -4px 12px 15px rgb(0 0 0 / 25%),
+      12px 0 15px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    background: #fff;
+    width: 840px;
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      background: #fff;
+      box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+      border-radius: 5px;
+
+      &.dark {
+        background: rgb(0 0 0 / 50%);
+      }
+    }
+  }
+}

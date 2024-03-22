@@ -1,0 +1,37 @@
+.userbar {
+  padding: 10px 16px;
+  background: rgba(0 0 0 / 50%);
+  backdrop-filter: blur(20px);
+  justify-content: space-between;
+  width: 100%;
+
+  .showroomname {
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+
+    .imgwrap {
+      height: 24px;
+      width: 24px;
+
+      img {
+        height: 24px;
+        width: 24px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .sidebtns {
+    gap: 10px;
+    color: white;
+
+    .actionbtn {
+      gap: 5px;
+      font-style: normal;
+      font-weight: 600;
+      opacity: 50%;
+    }
+  }
+}
